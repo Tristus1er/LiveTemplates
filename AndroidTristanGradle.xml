@@ -1,0 +1,29 @@
+<templateSet group="AndroidTristanGradle">
+  <template name="and_ext" value="ext {&#10;    koin_version = &quot;3.1.5&quot;&#10;    // Example, in dependencies&#10;    // implementation &quot;org.koin:koin-android-viewmodel:$koin_version&quot;&#10;}" description="Declare ext variables for version." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="and_flavor" value="    flavorDimensions &quot;mode&quot;&#10;    productFlavors {&#10;        demo {&#10;            // Assigns this product flavor to the &quot;mode&quot; flavor dimension.&#10;            dimension &quot;mode&quot;&#10;            versionNameSuffix &quot;-demo&quot;&#10;        }&#10;&#10;        full {&#10;            dimension &quot;mode&quot;&#10;            versionNameSuffix &quot;-full&quot;&#10;        }&#10;    }&#10;&#10;    variantFilter { variant -&gt;&#10;        def names = variant.flavors*.name&#10;        // To check for a certain build type, use variant.buildType.name == &quot;&lt;buildType&gt;&quot;&#10;        if (names.contains(&quot;minApi21&quot;) &amp;&amp; names.contains(&quot;demo&quot;)) {&#10;            // Gradle ignores any variants that satisfy the conditions above.&#10;            setIgnore(true)&#10;        }&#10;    }" description="Add flavor to android {" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_EXPRESSION" value="true" />
+    </context>
+  </template>
+    <template name="and_graddle_java8" value="// Add this part in the build.gradle file (Module: app)&#10;// Put inside the bloc: android {&#10;&#10;compileOptions {&#10;    sourceCompatibility JavaVersion.VERSION_1_8&#10;    targetCompatibility JavaVersion.VERSION_1_8&#10;}" description="Add Java 8 support." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="and_gradle_apk_name" value="// Add this part in the build.gradle file (Module: app)&#10;// Put inside the bloc: android { defaultConfig {&#10;&#10;// setting custom name for APK file&#10;project.ext.set(&quot;archivesBaseName&quot;, &quot;$appName$-&quot; + defaultConfig.versionName + &quot;-v&quot; + defaultConfig.versionCode)" description="Add config to set the apk name." toReformat="true" toShortenFQNames="true">
+    <variable name="appName" expression="" defaultValue="&quot;APP_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+    </context>
+  </template>
+</templateSet>

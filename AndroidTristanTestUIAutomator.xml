@@ -1,0 +1,10 @@
+<templateSet group="AndroidTristanTestUIAutomator">
+  <template name="and_search_by_id" value="val $objectname$: UiObject2 = device.wait(Until.findObject(By.res($packageName$, &quot;$resId$&quot;)), SEARCH_TIMEOUT)&#10;assertNotNull($objectname$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="resId" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="packageName" expression="" defaultValue="&quot;APP_PACKAGE_NAME&quot;" alwaysStopAt="false" />
+    <variable name="objectname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>
