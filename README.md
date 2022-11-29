@@ -9,11 +9,11 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
 	
 <br />
-<div>
+<div align="center">
 
   <h3 align="center">Android LiveTemplates</h3>
 
-  <p style="text-align: center;">
+  <p align="center">
     Plenty of Android LiveTemplates to develop application, faster!
     <br />
 	Ton's of snippets available.
@@ -35,7 +35,7 @@ Here's why:
 
 Of course, you will not find all what you need, and that's nice ... you can add your piece of code, pimp existing one, ... feel free to contribute!
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -90,7 +90,7 @@ If not :
 * Restart AndroidStudio (or IntelliJ).
 * Check the folder where you have putted the files.
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -98,16 +98,16 @@ If not :
 You just have to start writing the name of a LiveTemplate (all of them are starting with : "and_"), then autocomplete, and select the snippet you need.
 It will add the imports if needed, and only show the LiveTemplate corresponding to the context you are (Java, Koltin, XML, inside or outside of a method, ...).
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Fiw the Work In Progress
+- [ ] Fix the Work In Progress
 - [ ] Clean the old templates
 - [ ] Add new templates
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -123,26 +123,32 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the GNU GPLv3 License. See `LICENSE.txt` for more information.
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
 
 Tristan SALAUN - [@TristanSALAUN](https://twitter.com/TristanSALAUN) - tristan.salaun.pro@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/Tristus1er/LiveTemplates)
+Project Link: [https://github.com/Tristus1er/LiveTemplates](https://github.com/Tristus1er/LiveTemplates)
 
-<p style="text-align: right;">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Greetings -->
+## Greetings
 
+Thanks for the template of the readme file: 
+[Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Tristus1er/LiveTemplates.svg?style=for-the-badge
