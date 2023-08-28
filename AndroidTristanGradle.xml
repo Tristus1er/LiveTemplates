@@ -9,7 +9,7 @@
       <option name="GROOVY_EXPRESSION" value="true" />
     </context>
   </template>
-    <template name="and_graddle_java8" value="// Add this part in the build.gradle file (Module: app)&#10;// Put inside the bloc: android {&#10;&#10;compileOptions {&#10;    sourceCompatibility JavaVersion.VERSION_1_8&#10;    targetCompatibility JavaVersion.VERSION_1_8&#10;}" description="Add Java 8 support." toReformat="true" toShortenFQNames="true">
+  <template name="and_graddle_java8" value="// Add this part in the build.gradle file (Module: app)&#10;// Put inside the bloc: android {&#10;&#10;compileOptions {&#10;    sourceCompatibility JavaVersion.VERSION_1_8&#10;    targetCompatibility JavaVersion.VERSION_1_8&#10;}" description="Add Java 8 support." toReformat="true" toShortenFQNames="true">
     <context>
       <option name="GROOVY" value="true" />
       <option name="GROOVY_DECLARATION" value="false" />
@@ -24,6 +24,11 @@
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="and_notification_graddle_dependencies" value="def core_version = &quot;1.6.0&quot;&#10;dependencies {&#10;    implementation &quot;androidx.core:core:$core_version&quot;&#10;}" description="Add the dependencies needed for Notification (call top level)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_EXPRESSION" value="true" />
     </context>
   </template>
 </templateSet>
