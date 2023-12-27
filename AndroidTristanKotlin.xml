@@ -500,19 +500,19 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
-    <template name="and_notification_create_channel" value="// TODO : define the values in the strings.xml file. Example: &#10;//  &lt;string name=&quot;channel_name&quot;&gt;Push notification&lt;/string&gt;&#10;//  &lt;string name=&quot;channel_description&quot;&gt;Notification send by the server&lt;/string&gt;&#10;&#10;private const val CHANNEL_ID = &quot;channel_id&quot;&#10;&#10;private fun createNotificationChannel(context: android.content.Context) {&#10;    // Create the NotificationChannel, but only on API 26+ because&#10;    // the NotificationChannel class is new and not in the support library&#10;    if (android.os.Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.O) {&#10;        val name = context.getString(R.string.$channel_name$)&#10;        val descriptionText = context.getString(R.string.$channel_description$)&#10;        val importance = android.app.NotificationManager.$importance$&#10;        val channel = android.app.NotificationChannel(CHANNEL_ID, name, importance).apply {&#10;            description = descriptionText&#10;        }&#10;        // Register the channel with the system&#10;        val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager&#10;        notificationManager.createNotificationChannel(channel)&#10;    }&#10;}" description="Write a method to create a notification channel." toReformat="false" toShortenFQNames="true">
-        <variable name="channel_name" expression="" defaultValue="&quot;channel_name&quot;" alwaysStopAt="true" />
-        <variable name="channel_description" expression="" defaultValue="&quot;channel_description&quot;" alwaysStopAt="true" />
-        <variable name="importance" expression="enum(&quot;IMPORTANCE_UNSPECIFIED&quot;,&quot;IMPORTANCE_NONE&quot;,&quot;IMPORTANCE_MIN&quot;,&quot;IMPORTANCE_LOW&quot;,&quot;IMPORTANCE_DEFAULT&quot;,&quot;IMPORTANCE_HIGH&quot;,&quot;IMPORTANCE_MAX&quot;)" defaultValue="&quot;IMPORTANCE_DEFAULT&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="KOTLIN_CLASS" value="true" />
-        </context>
-    </template>
-    <template name="and_notification_create_notification" value="fun sendNotification(context: Context, textTitle: String, textContent: String) {&#10;    var builder = androidx.core.app.NotificationCompat.Builder(context, CHANNEL_ID)&#10;            .setSmallIcon(R.drawable.$notification_icon$)&#10;            .setContentTitle(textTitle)&#10;            .setContentText(textContent)&#10;            .setPriority(NotificationCompat.$priority$)&#10;}" description="Write a method to send a notification." toReformat="false" toShortenFQNames="true">
-        <variable name="notification_icon" expression="" defaultValue="&quot;notification_icon&quot;" alwaysStopAt="true" />
-        <variable name="priority" expression="enum(&quot;PRIORITY_DEFAULT&quot;,&quot;PRIORITY_LOW&quot;,&quot;PRIORITY_MIN&quot;,&quot;PRIORITY_HIGH&quot;,&quot;PRIORITY_MAX&quot;)" defaultValue="&quot;PRIORITY_DEFAULT&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="KOTLIN_CLASS" value="true" />
-        </context>
-    </template>
+  <template name="and_notification_create_channel" value="// TODO : define the values in the strings.xml file. Example: &#10;//  &lt;string name=&quot;channel_name&quot;&gt;Push notification&lt;/string&gt;&#10;//  &lt;string name=&quot;channel_description&quot;&gt;Notification send by the server&lt;/string&gt;&#10;&#10;private const val CHANNEL_ID = &quot;channel_id&quot;&#10;&#10;private fun createNotificationChannel(context: android.content.Context) {&#10;    // Create the NotificationChannel, but only on API 26+ because&#10;    // the NotificationChannel class is new and not in the support library&#10;    if (android.os.Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.O) {&#10;        val name = context.getString(R.string.$channel_name$)&#10;        val descriptionText = context.getString(R.string.$channel_description$)&#10;        val importance = android.app.NotificationManager.$importance$&#10;        val channel = android.app.NotificationChannel(CHANNEL_ID, name, importance).apply {&#10;            description = descriptionText&#10;        }&#10;        // Register the channel with the system&#10;        val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager&#10;        notificationManager.createNotificationChannel(channel)&#10;    }&#10;}" description="Write a method to create a notification channel." toReformat="false" toShortenFQNames="true">
+    <variable name="channel_name" expression="" defaultValue="&quot;channel_name&quot;" alwaysStopAt="true" />
+    <variable name="channel_description" expression="" defaultValue="&quot;channel_description&quot;" alwaysStopAt="true" />
+    <variable name="importance" expression="enum(&quot;IMPORTANCE_UNSPECIFIED&quot;,&quot;IMPORTANCE_NONE&quot;,&quot;IMPORTANCE_MIN&quot;,&quot;IMPORTANCE_LOW&quot;,&quot;IMPORTANCE_DEFAULT&quot;,&quot;IMPORTANCE_HIGH&quot;,&quot;IMPORTANCE_MAX&quot;)" defaultValue="&quot;IMPORTANCE_DEFAULT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="and_notification_create_notification" value="fun sendNotification(context: Context, textTitle: String, textContent: String) {&#10;    var builder = androidx.core.app.NotificationCompat.Builder(context, CHANNEL_ID)&#10;            .setSmallIcon(R.drawable.$notification_icon$)&#10;            .setContentTitle(textTitle)&#10;            .setContentText(textContent)&#10;            .setPriority(NotificationCompat.$priority$)&#10;}" description="Write a method to send a notification." toReformat="false" toShortenFQNames="true">
+    <variable name="notification_icon" expression="" defaultValue="&quot;notification_icon&quot;" alwaysStopAt="true" />
+    <variable name="priority" expression="enum(&quot;PRIORITY_DEFAULT&quot;,&quot;PRIORITY_LOW&quot;,&quot;PRIORITY_MIN&quot;,&quot;PRIORITY_HIGH&quot;,&quot;PRIORITY_MAX&quot;)" defaultValue="&quot;PRIORITY_DEFAULT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
 </templateSet>
