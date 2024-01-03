@@ -275,12 +275,12 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
-  <template name="and_SharedPreferences_load" value="    // TODO: Add to gradle : implementation 'androidx.preference:preference-ktx:1.2.0'&#10;    val sharedPref = android.preference.PreferenceManager.getDefaultSharedPreferences(applicationContext)&#10;    val defaultValue = resources.getInteger(R.string.value_default)&#10;    sharedPref.getInt(SHARED_PREFS_VALUE, defaultValue)&#10;$END$" description="Load value from SharedPreferences." toReformat="true" toShortenFQNames="true">
+  <template name="and_SharedPreferences_load" value="    // TODO: Add to gradle : implementation 'androidx.preference:preference-ktx:1.2.1'&#10;    val sharedPref = android.preference.PreferenceManager.getDefaultSharedPreferences(applicationContext)&#10;    val defaultValue = resources.getInteger(R.string.value_default)&#10;    sharedPref.getInt(SHARED_PREFS_VALUE, defaultValue)&#10;$END$" description="Load value from SharedPreferences." toReformat="true" toShortenFQNames="true">
     <context>
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="and_SharedPreferences_save" value="    // TODO: Add to gradle : implementation 'androidx.preference:preference-ktx:1.2.0'&#10;    val sharedPref = android.preference.PreferenceManager.getDefaultSharedPreferences(applicationContext)&#10;    val editor = sharedPref.edit()&#10;    editor.putString(SHARED_PREFS_VALUE, &quot;Value&quot;)&#10;    editor.commit()&#10;$END$" description="Save key-value into SharedPreferences." toReformat="true" toShortenFQNames="true">
+  <template name="and_SharedPreferences_save" value="    // TODO: Add to gradle : implementation 'androidx.preference:preference-ktx:1.2.1'&#10;    val sharedPref = android.preference.PreferenceManager.getDefaultSharedPreferences(applicationContext)&#10;    val editor = sharedPref.edit()&#10;    editor.putString(SHARED_PREFS_VALUE, &quot;Value&quot;)&#10;    editor.commit()&#10;$END$" description="Save key-value into SharedPreferences." toReformat="true" toShortenFQNames="true">
     <context>
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
