@@ -1,6 +1,6 @@
 <templateSet group="AndroidTristanJava">
   <template name="and_test_log" value="$END$&#10;android.util.Log.v(TAG, &quot;$enclosing_method$ $LOG_VALUE$&quot;);&#10;Log.d(TAG, &quot;$enclosing_method$ $LOG_VALUE$&quot;);&#10;Log.i(TAG, &quot;$enclosing_method$ $LOG_VALUE$&quot;);&#10;Log.w(TAG, &quot;$enclosing_method$ $LOG_VALUE$&quot;);&#10;Log.e(TAG, &quot;$enclosing_method$ $LOG_VALUE$&quot;);&#10;Log.wtf(TAG, &quot;$enclosing_method$ $LOG_VALUE$&quot;);&#10;" description="Display the different kind of log levels." toReformat="true" toShortenFQNames="true">
-    <variable name="enclosing_method" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="enclosing_method" expression="methodName()" defaultValue="" alwaysStopAt="false" />
     <variable name="LOG_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="true" />
@@ -337,7 +337,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="and_dialog_alert" value="android.support.v7.app.AlertDialog.Builder builder = new AlertDialog.Builder($context$);&#10;builder.setMessage(&quot;$messageText$&quot;).setCancelable(false)&#10;        .setPositiveButton(&quot;$messagePositive$&quot;, new DialogInterface.OnClickListener() {&#10;            @Override&#10;            public void onClick(android.content.DialogInterface dialog, int which) {&#10;                // TODO : implements your code here.&#10;                $END$&#10;            }&#10;        }).setNegativeButton(&quot;$messageNegative$&quot;, new DialogInterface.OnClickListener() {&#10;&#10;    @Override&#10;    public void onClick(android.content.DialogInterface dialog, int which) {&#10;        dialog.cancel();&#10;    }&#10;});&#10;builder.create().show();" description="Display an alert Dialog." toReformat="true" toShortenFQNames="true">
+  <template name="and_dialog_alert" value="androidx.appcompat.app.AlertDialog.Builder builder = new AlertDialog.Builder($context$);&#10;builder.setMessage(&quot;$messageText$&quot;).setCancelable(false)&#10;        .setPositiveButton(&quot;$messagePositive$&quot;, new DialogInterface.OnClickListener() {&#10;            @Override&#10;            public void onClick(android.content.DialogInterface dialog, int which) {&#10;                // TODO : implements your code here.&#10;                $END$&#10;            }&#10;        }).setNegativeButton(&quot;$messageNegative$&quot;, new DialogInterface.OnClickListener() {&#10;&#10;    @Override&#10;    public void onClick(android.content.DialogInterface dialog, int which) {&#10;        dialog.cancel();&#10;    }&#10;});&#10;builder.create().show();" description="Display an alert Dialog." toReformat="true" toShortenFQNames="true">
     <variable name="context" expression="variableOfType(&quot;android.content.Context&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="messageText" expression="" defaultValue="&quot;Hello world!&quot;" alwaysStopAt="true" />
     <variable name="messagePositive" expression="" defaultValue="&quot;Yes&quot;" alwaysStopAt="true" />

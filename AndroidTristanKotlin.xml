@@ -515,4 +515,14 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
+  <template name="and_request_permission_single" value="// Source: https://medium.com/@ajinkya.kolkhede1/requesting-runtime-permissions-using-new-activityresult-api-cb6116551f00&#10;&#10;// TODO: Add the permission in the AndroidManifest.xml file.&#10;// Example: &lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot;/&gt;&#10;&#10;// Call the method with:&#10;// requestPermission.launch(android.Manifest.permission.ACCESS_COARSE_LOCATION)&#10;&#10;private val requestPermission =&#10;    registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestPermission()) { isGranted -&gt;&#10;        // Do something if permission granted&#10;        if (isGranted) {&#10;            android.util.Log.i(&quot;DEBUG&quot;, &quot;permission granted&quot;)&#10;        } else {&#10;            Log.i(&quot;DEBUG&quot;, &quot;permission denied&quot;)&#10;        }&#10;    }" description="Use ActivityResult with RequestPermission contract to ask a single permission." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="and_request_permission_multiple" value="// Source: https://medium.com/@ajinkya.kolkhede1/requesting-runtime-permissions-using-new-activityresult-api-cb6116551f00&#10;&#10;// TODO: Add the permission in the AndroidManifest.xml file.&#10;// Example: &#10;// &lt;uses-permission android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot; /&gt;&#10;// &lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot; /&gt;&#10;// &lt;uses-permission android:name=&quot;android.permission.READ_CONTACTS&quot; /&gt;&#10;&#10;// Call the method with (example):&#10;// requestMultiplePermissions.launch(&#10;//            arrayOf(&#10;//                android.Manifest.permission.READ_CONTACTS,&#10;//                android.Manifest.permission.ACCESS_FINE_LOCATION&#10;//            )&#10;//        )&#10;&#10;private val requestMultiplePermissions = registerForActivityResult(androidx.activity.result.contract.ActivityResultContracts.RequestMultiplePermissions()) { permissions -&gt;&#10;&#9;permissions.entries.forEach {&#10;&#9;&#9;android.util.Log.i(&quot;DEBUG&quot;, &quot;${it.key} = ${it.value}&quot;)&#10;&#9;}&#10;}" description="Use ActivityResult with RequestPermission contract to ask a multiple permissions." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
 </templateSet>
