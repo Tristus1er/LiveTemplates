@@ -31,4 +31,9 @@
       <option name="GROOVY_EXPRESSION" value="true" />
     </context>
   </template>
+  <template name="and_signing_config" value="// TODO: Generate the Keystore.&#10;// TODO: Declare the env variable: KEYSTORE_PASSWORD = 'YourKeyStorePassword'&#10;// TODO: Restart the IDE to handle the new declared variable.&#10;// Signature of the application&#10;signingConfigs {&#10;    release {&#10;        storeFile file('C:\\secu\\stid_arcblue.jks')&#10;        keyAlias 'arcbluestorekey1'&#10;        storePassword System.getenv(&quot;KEYSTORE_PASSWORD&quot;)&#10;        keyPassword System.getenv(&quot;KEYSTORE_PASSWORD&quot;)&#10;    }&#10;}" description="In the android bloc, add the signinConfig bloc." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>

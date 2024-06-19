@@ -525,4 +525,19 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
+    <template name="and_notification_ask_permissions_13+" value="// TODO: When needed, call the method&#10;// if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.TIRAMISU) {&#10;//     pushNotificationPermissionLauncher.launch(android.Manifest.permission.POST_NOTIFICATIONS)&#10;// }&#10;&#10;private val pushNotificationPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted -&gt;&#10;&#9;Timber.v(&quot;null() called with: granted = [$granted]&quot;)&#10;}" description="Ask to send notifications for applications Android 13+" toReformat="false" toShortenFQNames="true" />
+  <template name="and_viemodel_flow_attribute_boolean" value="private val _is$attribute_name$: MutableStateFlow&lt;Boolean&gt; = MutableStateFlow(false)&#10;var is$attribute_name$ = _is$attribute_name$.asStateFlow()&#10;&#10;$END$&#10;&#10;fun changeIs$attribute_name$(is$attribute_name$: Boolean) {&#10;&#9;_is$attribute_name$.value = is$attribute_name$&#10;}" description="Declare a Flow attribute of type Boolean, in a ViewModel." toReformat="false" toShortenFQNames="true">
+    <variable name="attribute_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="and_repository_interface_add_get_set_methods" value="suspend fun set$capitalizeItem$( $item$: $type$ )&#10;suspend fun get$capitalizeItem$(): Result&lt;$type$&gt;" description="Declare the method in the Interface of Repository (Domain Layer)" toReformat="false" toShortenFQNames="true">
+    <variable name="item" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="capitalizeItem" expression="capitalize(item)" defaultValue="" alwaysStopAt="false" />
+    <variable name="type" expression="enum(&quot;Boolean&quot;, &quot;String&quot;, &quot;Int&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
 </templateSet>

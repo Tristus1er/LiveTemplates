@@ -45,4 +45,5 @@
       <option name="KOTLIN_TOPLEVEL" value="true" />
     </context>
   </template>
+  <template name="and_compose_html_display_textview" value="val rawHTML = stringResource(id = R.string.about)&#10;&#10;// Display HTML in Compose View: Not supported Yet =&gt; Use Android View&#10;// Source: https://medium.com/@theAndroidDeveloper/displaying-html-text-in-jetpack-compose-7b801bb028c6&#10;AndroidView(modifier = modifier.padding(dimensions.spaceMedium),&#10;    factory = { MaterialTextView(it) },&#10;    update = { it.text = HtmlCompat.fromHtml(rawHTML, HtmlCompat.FROM_HTML_MODE_COMPACT) })" description="Display an HTML text in a simple TextView." toReformat="false" toShortenFQNames="true" />
 </templateSet>
