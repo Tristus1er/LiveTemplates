@@ -540,4 +540,9 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
+  <template name="and_fun_is_device_secured" value="// Source: https://medium.com/@muley.mahesh/detecting-screen-lock-is-enabled-disabled-in-android-28efd61a3c8f&#10;&#10;fun isDeviceScreenLocked(): Boolean {&#10;    return if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.M) {&#10;        isDeviceLocked()&#10;    } else {&#10;        isPatternSet() || isPassOrPinSet()&#10;    }&#10;}&#10;&#10;/**&#10; * @return true if pattern set, false if not (or if an issue when checking)&#10; */&#10;private fun isPatternSet(): Boolean {&#10;    val cr: ContentResolver = this.contentResolver&#10;    return try {&#10;        val lockPatternEnable: Int =&#10;            Settings.Secure.getInt(cr, Settings.Secure.LOCK_PATTERN_ENABLED)&#10;        lockPatternEnable == 1&#10;    } catch (e: Settings.SettingNotFoundException) {&#10;        false&#10;    }&#10;}&#10;&#10;/**&#10; * @return true if pass or pin set&#10; */&#10;private fun isPassOrPinSet(): Boolean {&#10;    val keyguardManager: KeyguardManager =&#10;        this.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager //api 16+&#10;    return keyguardManager.isKeyguardSecure&#10;}&#10;&#10;/**&#10; * @return true if pass or pin or pattern locks screen&#10; */&#10;@TargetApi(23)&#10;private fun isDeviceLocked(): Boolean {&#10;    val keyguardManager: KeyguardManager =&#10;        this.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager //api 23+&#10;    return keyguardManager.isDeviceSecure&#10;}" description="Write functions to know if the device is secured." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
 </templateSet>
