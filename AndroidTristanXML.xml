@@ -4,7 +4,7 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
-  <template name="and_material_design_edittext" value="&lt;!-- More details here : https://material.io/develop/android/components/text-input-layout/ --&gt;&#10;&lt;!-- DO NOT FORGET TO ADD the following to the build.gradle : implementation 'com.google.android.material:material:1.5.0' --&gt;&#10;&lt;!-- TODO : NOTE : Enter the element name --&gt;&#10;&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/$file_name$_$type$_$name$_layout&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:hint=&quot;@string/$res_string_name$&quot;&gt;&#10;&#10;  &lt;com.google.android.material.textfield.TextInputEditText&#10;      android:id=&quot;@+id/$file_name$_$type$_$name$&quot;&#10;      android:layout_width=&quot;match_parent&quot;&#10;      android:layout_height=&quot;wrap_content&quot;/&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="Create a Material Design edittext." toReformat="true" toShortenFQNames="true">
+  <template name="and_material_design_edittext" value="&lt;!-- TODO : NOTE : Enter the element name --&gt;&#10;&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/$file_name$_$type$_$name$_layout&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:hint=&quot;@string/$res_string_name$&quot;&gt;&#10;&#10;  &lt;com.google.android.material.textfield.TextInputEditText&#10;      android:id=&quot;@+id/$file_name$_$type$_$name$&quot;&#10;      android:layout_width=&quot;match_parent&quot;&#10;      android:layout_height=&quot;wrap_content&quot;/&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="Create a Material Design edittext." toReformat="true" toShortenFQNames="true">
     <variable name="file_name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <variable name="type" expression="" defaultValue="&quot;editText&quot;" alwaysStopAt="false" />
     <variable name="name" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
@@ -30,15 +30,6 @@
       <option name="XML_TAG" value="false" />
       <option name="XML_TEXT" value="false" />
       <option name="XSL_TEXT" value="false" />
-    </context>
-  </template>
-  <template name="and_material_design_button" value="&lt;!-- DO NOT FORGET TO ADD the following to the build.gradle : implementation 'com.google.android.material:material:1.1.0' --&gt;&#10;&lt;!-- In the res/drawable/values/styles.xml file, if the theme is (or similar to) : Theme.AppCompat.Light.DarkActionBar&#10;&lt;!-- Then update it like this : Theme.MaterialComponents.Light.DarkActionBar&#10;&lt;!-- TODO : NOTE : Type the element name --&gt;&#10;&lt;com.google.android.material.button.MaterialButton&#10;        android:id=&quot;@+id/$file_name$_$type$_$name$&quot;&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:text=&quot;@string/$res_string_name$&quot;/&gt;" description="Create a Material Design button." toReformat="true" toShortenFQNames="true">
-    <variable name="file_name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
-    <variable name="type" expression="" defaultValue="&quot;button&quot;" alwaysStopAt="false" />
-    <variable name="name" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
-    <variable name="res_string_name" expression="" defaultValue="&quot;button_label&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="XML_TEXT" value="true" />
     </context>
   </template>
   <template name="and_material_design_switch" value="&lt;com.google.android.material.switchmaterial.SwitchMaterial&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:text=&quot;@string/label_1&quot;/&gt;&#10;&#10;&lt;!-- Code to handle it:&#10; // To check a switch&#10;switchMaterial.isChecked = true&#10;&#10;// To listen for a switch's checked/unchecked state changes&#10;switchMaterial.setOnCheckedChangeListener { buttonView, isChecked&#10;    // Responds to switch being checked/unchecked&#10;}&#10;--&gt;" description="Create a Material Design Switch." toReformat="false" toShortenFQNames="true">

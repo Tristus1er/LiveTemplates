@@ -261,7 +261,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="and_SharedPreferences_load" value="android.content.SharedPreferences sharedPref = android.preference.PreferenceManager.getDefaultSharedPreferences(getApplicationContext());&#10;int defaultValue = getResources().getInteger(R.string.saved_high_score_default);&#10;sharedPref.getInt(Constants.SHARED_PREFS_VALUE, defaultValue);" description="Load value from SharedPreferences." toReformat="true" toShortenFQNames="true">
+  <template name="and_SharedPreferences_load" value="// TODO: Add to gradle : implementation 'androidx.preference:preference-ktx:1.2.1'&#10;// TODO: delete the android.preference.PreferenceManager import and replace by the new one (androidx).&#10;android.content.SharedPreferences sharedPref = android.preference.PreferenceManager.getDefaultSharedPreferences(getApplicationContext());&#10;int defaultValue = getResources().getInteger(R.string.saved_high_score_default);&#10;sharedPref.getInt(Constants.SHARED_PREFS_VALUE, defaultValue);" description="Load value from SharedPreferences." toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_STATEMENT" value="true" />
     </context>
